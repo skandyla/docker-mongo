@@ -1,0 +1,20 @@
+version: '2'
+services:
+    mongod:
+        image: mongo34
+        environment:
+            AUTH: y
+            ADMIN_USER: admin
+            ADMIN_AUTHENTICATION_DATABASE: admin
+            ADMIN_PWD: adminpass
+            DB_NAME:   someuserdb
+            DB_USER: someuser
+            DB_PWD:  somepass
+        volumes:
+             - dbdata:/data/db
+        ports:
+             - "27017:27017"
+        restart: always
+
+volumes:
+    dbdata:
