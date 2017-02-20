@@ -23,7 +23,7 @@ ENV AUTH="n" \
     SHARD_SVR="n" \
     CONFIG_SVR="n" \
     CONFIG_SERVERS="" \
-    CONFIG_DIR="/data/db/config" \
+    CONFIG_DIR="/data/db/_config" \
     SHARDS=""
 
 COPY ./run /run

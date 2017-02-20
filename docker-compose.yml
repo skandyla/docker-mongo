@@ -1,7 +1,7 @@
 version: '2'
 services:
     mongod:
-        image: mongo34
+        image: skandyla/mongo
         environment:
             AUTH: y
             ADMIN_USER: admin
